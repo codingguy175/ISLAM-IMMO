@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISLAM Immobilier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">ISLAM <span class="text-gold">IMMO</span></div>
+      <ul class="nav-links">
+        <li><a href="#" data-i18n="home">Accueil</a></li>
+        <li><a href="projets.html" data-i18n="projects">Projets</a></li>
+        <li><a href="#about" data-i18n="about">À Propos</a></li>
+        <li><a href="#" id="navContactLink" data-i18n="contact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ar">عربي</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Using the AI generated image for now, later user can replace it -->
+    <div class="hero-bg" style="background-image: url('assets/hero_bg_1778710201203.png'); background-position: center; background-size: cover;"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="hero_title">L'Excellence Immobilière en Algérie</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Découvrez nos résidences haut standing situées dans les communes les plus prisées d'Alger.</p>
+      <a href="#projets" class="btn btn-primary" data-i18n="cta_explore">Explorer nos projets</a>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats" data-aos="fade-up">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-number" data-target="12">0</div>
+        <div class="stat-label" data-i18n="stats_projects">Projets Livrés</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="6">0</div>
+        <div class="stat-label" data-i18n="stats_communes">Communes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="8">0</div>
+        <div class="stat-label" data-i18n="stats_years">Années d'Expérience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about" style="padding: 120px 0;">
+    <div class="container about-grid">
+      <div class="about-image-placeholder" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="About Us" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+      </div>
+      <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title text-gold" data-i18n="about_title" style="text-align: left; margin-bottom: 24px;">Qui sommes-nous ?</h2>
+        <p data-i18n="about_desc_1" style="color: var(--c-text-muted); font-size: 16px; margin-bottom: 20px;">
+          ISLAM Immobilier est un promoteur immobilier de luxe dédié à la création d'espaces de vie d'exception. Forts de plusieurs années d'expérience, nous combinons architecture moderne, matériaux nobles et finitions parfaites.
+        </p>
+        <p data-i18n="about_desc_2" style="color: var(--c-text-muted); font-size: 16px;">
+          Notre mission est d'offrir à nos clients des résidences haut standing dans les quartiers les plus prestigieux d'Alger, conçues pour le confort absolu, la sécurité et l'élégance intemporelle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projets" class="featured">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title text-gold" data-i18n="featured_title">Nos Projets Phares</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up" data-project-id="emeraude" style="cursor: pointer;">
+          <div class="project-image-placeholder">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Résidence L'Émeraude" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-commune" data-i18n="project_1_loc">Hydra</div>
+            <h3 class="project-title" data-i18n="project_1_title">Résidence L'Émeraude</h3>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project-id="saphir" style="cursor: pointer;">
+          <div class="project-image-placeholder">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Résidence Le Saphir" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-commune" data-i18n="project_2_loc">Chéraga</div>
+            <h3 class="project-title" data-i18n="project_2_title">Résidence Le Saphir</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Projects Row 1 -->
+      <div class="projects-grid" style="margin-top: 32px;">
+        <!-- Project 3 -->
+        <div class="project-card" data-aos="fade-up" data-project-id="perle" style="cursor: pointer;">
+          <div class="project-image-placeholder">
+            <img src="https://images.unsplash.com/photo-1600607687931-cebf0746e50e?auto=format&fit=crop&w=600&q=80" alt="Résidence La Perle" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-commune" data-i18n="project_3_loc">Bab Ezzouar</div>
+            <h3 class="project-title" data-i18n="project_3_title">Résidence La Perle</h3>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project-id="diamant" style="cursor: pointer;">
+          <div class="project-image-placeholder">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Résidence Le Diamant" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-commune" data-i18n="project_4_loc">Said Hamdin</div>
+            <h3 class="project-title" data-i18n="project_4_title">Résidence Le Diamant</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Projects Row 2 -->
+      <div class="projects-grid" style="margin-top: 32px;">
+        <!-- Project 5 -->
+        <div class="project-card" data-aos="fade-up" data-project-id="amethyste" style="cursor: pointer;">
+          <div class="project-image-placeholder">
+            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=600&q=80" alt="Résidence L'Améthyste" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-commune" data-i18n="project_5_loc">Ben Aknoun</div>
+            <h3 class="project-title" data-i18n="project_5_title">Résidence L'Améthyste</h3>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project-id="onyx" style="cursor: pointer;">
+          <div class="project-image-placeholder">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=600&q=80" alt="Résidence L'Onyx" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-commune" data-i18n="project_6_loc">Bab Ezzouar</div>
+            <h3 class="project-title" data-i18n="project_6_title">Résidence L'Onyx</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Projects Row 3 -->
+      <div class="projects-grid" style="margin-top: 32px;">
+        <!-- Project 7 -->
+        <div class="project-card" data-aos="fade-up" data-project-id="rubis" style="cursor: pointer;">
+          <div class="project-image-placeholder">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80" alt="Résidence Le Rubis" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-commune" data-i18n="project_7_loc">Said Hamdin</div>
+            <h3 class="project-title" data-i18n="project_7_title">Résidence Le Rubis</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Banner -->
+  <section class="contact-cta" style="padding: 80px 0; background: var(--c-surface); text-align: center; border-top: 1px solid var(--c-border);">
+    <div class="container">
+      <h2 class="section-title text-gold" data-i18n="contact_cta_title" style="margin-bottom: 24px;">Prêt à trouver votre résidence de rêve ?</h2>
+      <button class="btn btn-primary" id="openContactModal" data-i18n="contact_cta_btn">Nous Contacter</button>
+    </div>
+  </section>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="projectDetailsModal">
+    <div class="modal-content" style="max-width: 800px; padding: 0; overflow-y: auto; overflow-x: hidden; max-height: 90vh; background: var(--c-bg);">
+      <button class="modal-close" id="closeProjectDetailsModal" style="z-index: 10; background: rgba(0,0,0,0.5); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; top: 16px; right: 16px; color: #fff;">&times;</button>
+      
+      <div class="project-details-hero" style="width: 100%; height: 300px; position: relative;">
+        <img id="detailImage" src="" alt="Project" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 40px 24px 20px;">
+          <div class="project-commune" id="detailCommune" style="margin-bottom: 8px; font-size: 16px;">Commune</div>
+          <h2 class="hero-title" id="detailTitle" style="font-size: 32px; margin-bottom: 0;">Nom du Projet</h2>
+        </div>
+      </div>
+
+      <div style="padding: 32px 24px; text-align: left;">
+        <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 32px; border-bottom: 1px solid var(--c-border); padding-bottom: 24px;">
+          <div class="stat-item" style="padding: 16px; background: rgba(255,255,255,0.02);">
+            <div class="stat-number" id="detailFloors" style="font-size: 24px;">0</div>
+            <div class="stat-label" data-i18n="detail_floors">Étages</div>
+          </div>
+          <div class="stat-item" style="padding: 16px; background: rgba(255,255,255,0.02);">
+            <div class="stat-number" id="detailApts" style="font-size: 24px;">0</div>
+            <div class="stat-label" data-i18n="detail_apts">Appartements</div>
+          </div>
+          <div class="stat-item" style="padding: 16px; background: rgba(255,255,255,0.02);">
+            <div class="stat-number" id="detailDelivery" style="font-size: 24px;">202X</div>
+            <div class="stat-label" data-i18n="detail_delivery">Livraison</div>
+          </div>
+        </div>
+
+        <h3 class="text-gold" data-i18n="detail_desc_title" style="margin-bottom: 16px; font-size: 20px;">À Propos du Projet</h3>
+        <p id="detailDesc" style="color: var(--c-text-muted); font-size: 15px; margin-bottom: 24px; line-height: 1.8;">
+          Description...
+        </p>
+
+        <h3 class="text-gold" data-i18n="detail_amenities_title" style="margin-bottom: 16px; font-size: 20px;">Commodités</h3>
+        <ul id="detailAmenities" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; color: var(--c-text-muted); font-size: 15px; margin-bottom: 32px; list-style-type: none;">
+          <!-- Amenities injected here -->
+        </ul>
+
+        <button class="btn btn-primary" id="btnContactProject" style="width: 100%;" data-i18n="detail_contact_btn">Être contacté pour ce projet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeContactModal">&times;</button>
+      <h3 class="modal-title text-gold" data-i18n="modal_title" style="margin-bottom: 20px; font-size: 28px;">Contactez-Nous</h3>
+      
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="contactName" placeholder="Votre Nom" required data-i18n-placeholder="form_name">
+        </div>
+        <div class="form-group">
+          <input type="tel" id="contactPhone" placeholder="Votre Numéro" required data-i18n-placeholder="form_phone">
+        </div>
+        <div class="form-group">
+          <textarea id="contactMessage" placeholder="Votre Message" rows="4" required data-i18n-placeholder="form_message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 20px;" data-i18n="form_submit">Envoyer</button>
+      </form>
+
+      <div class="contact-details" style="border-top: 1px solid var(--c-border); padding-top: 20px;">
+        <div class="contact-item" style="margin-bottom: 16px; font-size: 18px;">
+          <span data-i18n="modal_phone" style="color: var(--c-text-muted);">Téléphone</span>: <br>
+          <a href="tel:077392826" style="color: var(--c-text); font-weight: 500; font-size: 24px;">077392826</a>
+        </div>
+        <div class="contact-item" style="font-size: 18px;">
+          <span data-i18n="modal_email" style="color: var(--c-text-muted);">Email</span>: <br>
+          <a href="mailto:islamimmo@gmail.com" style="color: var(--c-text); font-weight: 500; font-size: 20px;">islamimmo@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer_text">© 2026 ISLAM Immobilier. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/21377392826" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
